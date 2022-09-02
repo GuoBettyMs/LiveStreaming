@@ -32,7 +32,7 @@
         <scene sceneID="GyD-Hs-1HI">
             <objects>
                 <viewControllerPlaceholder storyboardName="HomeVC" id="cnh-N7-uzM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" image="house" catalog="system" selectedImage="house.fill" id="s9t-EZ-rAe"/>
+                    <tabBarItem key="tabBarItem" title="首页" id="s9t-EZ-rAe"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58y-U9-arS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,8 +70,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="house" catalog="system" width="128" height="106"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="star" catalog="system" width="128" height="116"/>

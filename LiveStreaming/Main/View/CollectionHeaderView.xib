@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="CollectionHeaderView" customModule="LiveStreaming" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mq-f1-PRK">
+                    <rect key="frame" x="0.0" y="0.0" width="334" height="10"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="1Yt-qV-jp7"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone.homebutton" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="74U-rz-oXL">
+                    <rect key="frame" x="10" y="20" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="rJI-rE-HNn"/>
+                        <constraint firstAttribute="height" constant="20" id="wLz-Hf-AHB"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwi-Vk-FGt">
+                    <rect key="frame" x="40" y="20" width="35" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sv5-UK-uhZ">
+                    <rect key="frame" x="277" y="20" width="47" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="更多-&gt;">
+                        <color key="titleColor" systemColor="systemGray2Color"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sv5-UK-uhZ" secondAttribute="trailing" constant="10" id="7C1-Ff-TTR"/>
+                <constraint firstItem="74U-rz-oXL" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="815-bK-JLb"/>
+                <constraint firstItem="Jwi-Vk-FGt" firstAttribute="leading" secondItem="74U-rz-oXL" secondAttribute="trailing" constant="10" id="B92-ql-dbS"/>
+                <constraint firstItem="5mq-f1-PRK" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="DNy-3u-cj1"/>
+                <constraint firstItem="5mq-f1-PRK" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Jw0-pX-t37"/>
+                <constraint firstItem="sv5-UK-uhZ" firstAttribute="top" secondItem="5mq-f1-PRK" secondAttribute="bottom" constant="10" id="NOp-aV-wPa"/>
+                <constraint firstItem="74U-rz-oXL" firstAttribute="top" secondItem="5mq-f1-PRK" secondAttribute="bottom" constant="10" id="QM3-WK-lNb"/>
+                <constraint firstAttribute="trailing" secondItem="5mq-f1-PRK" secondAttribute="trailing" id="WLe-Nm-aAp"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="Jwi-Vk-FGt" secondAttribute="bottom" constant="10" id="Yzl-Xa-fjc"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="sv5-UK-uhZ" secondAttribute="bottom" constant="10" id="oIT-Kb-Dhf"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="74U-rz-oXL" secondAttribute="bottom" constant="10" id="rkH-1s-nie"/>
+                <constraint firstItem="Jwi-Vk-FGt" firstAttribute="top" secondItem="5mq-f1-PRK" secondAttribute="bottom" constant="10" id="zjf-oh-fWC"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImgV" destination="74U-rz-oXL" id="zmT-Ih-VLh"/>
+                <outlet property="titleL" destination="Jwi-Vk-FGt" id="UGb-qj-KGd"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="113.16964285714285"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="iphone.homebutton" catalog="system" width="108" height="128"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

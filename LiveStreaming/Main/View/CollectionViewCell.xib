@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="LiveStreaming" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="234" height="198"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="234" height="198"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="直播房间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTB-zK-Cuv">
+                        <rect key="frame" x="19" y="174" width="45" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0Aa-gi-oOZ">
+                        <rect key="frame" x="0.0" y="175" width="14" height="11.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="UXW-jx-GnN"/>
+                            <constraint firstAttribute="height" constant="14" id="iYR-yp-5Pe"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="pSi-Vb-DcK">
+                        <rect key="frame" x="0.0" y="0.0" width="234" height="164"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主播名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Tj-Sr-RjQ">
+                        <rect key="frame" x="5" y="145" width="45" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgz-Nw-jjH">
+                        <rect key="frame" x="185" y="145" width="44" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Cqp-8m-9gs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="在线666">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="pSi-Vb-DcK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9G7-Ts-3bp"/>
+                <constraint firstAttribute="trailing" secondItem="pSi-Vb-DcK" secondAttribute="trailing" id="EN2-w3-yc4"/>
+                <constraint firstItem="pSi-Vb-DcK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EPa-x2-6UV"/>
+                <constraint firstItem="dgz-Nw-jjH" firstAttribute="trailing" secondItem="pSi-Vb-DcK" secondAttribute="trailing" constant="-5" id="Evw-K8-va0"/>
+                <constraint firstAttribute="bottom" secondItem="YTB-zK-Cuv" secondAttribute="bottom" constant="10" id="Hxe-tk-zgZ"/>
+                <constraint firstItem="YTB-zK-Cuv" firstAttribute="top" secondItem="pSi-Vb-DcK" secondAttribute="bottom" constant="10" id="PuV-IF-b6c"/>
+                <constraint firstItem="0Aa-gi-oOZ" firstAttribute="top" secondItem="pSi-Vb-DcK" secondAttribute="bottom" constant="10" id="TZu-Wq-lxg"/>
+                <constraint firstItem="0Aa-gi-oOZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aKf-iQ-R6g"/>
+                <constraint firstItem="8Tj-Sr-RjQ" firstAttribute="leading" secondItem="pSi-Vb-DcK" secondAttribute="leading" constant="5" id="hpR-U0-ZE4"/>
+                <constraint firstAttribute="bottom" secondItem="0Aa-gi-oOZ" secondAttribute="bottom" constant="10" id="kKD-Vj-SHy"/>
+                <constraint firstItem="dgz-Nw-jjH" firstAttribute="bottom" secondItem="pSi-Vb-DcK" secondAttribute="bottom" constant="-5" id="kuB-Hg-Akw"/>
+                <constraint firstItem="8Tj-Sr-RjQ" firstAttribute="bottom" secondItem="pSi-Vb-DcK" secondAttribute="bottom" constant="-5" id="mZ8-QN-XtF"/>
+                <constraint firstItem="YTB-zK-Cuv" firstAttribute="leading" secondItem="0Aa-gi-oOZ" secondAttribute="trailing" constant="5" id="ryw-Wf-k0H"/>
+            </constraints>
+            <size key="customSize" width="234" height="198"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="iconImgV" destination="pSi-Vb-DcK" id="P2d-6X-iHt"/>
+                <outlet property="nickNameL" destination="8Tj-Sr-RjQ" id="E3G-Ed-34N"/>
+                <outlet property="onLineBtn" destination="dgz-Nw-jjH" id="6Vs-xb-uqa"/>
+                <outlet property="roomnameL" destination="YTB-zK-Cuv" id="22N-wE-Zcn"/>
+            </connections>
+            <point key="canvasLocation" x="265.21739130434787" y="163.39285714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="logo" width="100" height="100"/>
+        <image name="play.square" catalog="system" width="128" height="114"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -43,7 +43,6 @@ class PageContentView: UIView {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: contentCellID)
-        
         return collectionView
     }()    
     

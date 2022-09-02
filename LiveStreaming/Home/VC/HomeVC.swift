@@ -45,8 +45,9 @@ class HomeVC: UIViewController {
     }()
     
     // MARK: PageContentView 懒加载属性
-    private lazy var pageContentView: PageContentView = {  [weak self] in
-        let contenVFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH)
+    private lazy var pageContentView: PageContentView = { [weak self] in
+        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabBarH
+        let contentVFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
 
         var childVCs = [UIViewController]()
         childVCs.append(RecommendVC())
@@ -55,7 +56,7 @@ class HomeVC: UIViewController {
             vc.view.backgroundColor = .randomColor()
             childVCs.append(vc)
         }
-        let contentView = PageContentView(frame: contenVFrame, childVCs: childVCs, parentVC: self)
+        let contentView = PageContentView(frame: contentVFrame, childVCs: childVCs, parentVC: self)
         contentView.pageContentViewDelegate = self
         return contentView
     }()
