@@ -14,18 +14,15 @@
      (1) 推荐界面  collectionView
           a. 无限轮播界面
           b. 游戏Icon界面
-          c. 主播房间界面
+          c. 主播界面 RecommendVC
      (2) 游戏界面  collectionView
           a. 常用游戏Icon界面 （10个）
           b. 全部游戏Icon界面
      (3) 娱乐界面  collectionView
-          a. 界面
-          b. 界面
-          c. 界面
+          a. 游戏Icon界面
+          b. 主播界面
      (4) 趣玩界面  collectionView
           a. 主播房间界面
-
- 
  */
 
 import UIKit
@@ -51,11 +48,10 @@ class HomeVC: UIViewController {
 
         var childVCs = [UIViewController]()
         childVCs.append(RecommendVC())
-        for _ in 0..<3{
-            let vc = UIViewController()
-            vc.view.backgroundColor = .randomColor()
-            childVCs.append(vc)
-        }
+        childVCs.append(GameVC())
+        childVCs.append(AmuseVC())
+        childVCs.append(FunVC())
+
         let contentView = PageContentView(frame: contentVFrame, childVCs: childVCs, parentVC: self)
         contentView.pageContentViewDelegate = self
         return contentView

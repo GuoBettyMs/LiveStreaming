@@ -14,7 +14,7 @@
                 <viewController id="PDZ-Rv-ojf" customClass="HomeVC" customModule="LiveStreaming" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l7f-1c-odr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <viewLayoutGuide key="safeArea" id="N9F-db-a0x"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Edt-gq-XW1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1328.985507246377" y="-394.41964285714283"/>
+            <point key="canvasLocation" x="1482.6086956521742" y="-394.41964285714283"/>
         </scene>
         <!--首页-->
         <scene sceneID="9uj-X1-ZYd">
@@ -43,7 +43,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HL1-Pq-3Ow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="418.84057971014494" y="-394.41964285714283"/>
+            <point key="canvasLocation" x="418.84057971014499" y="-394.41964285714283"/>
         </scene>
     </scenes>
     <resources>

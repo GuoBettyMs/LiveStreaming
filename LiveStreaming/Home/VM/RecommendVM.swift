@@ -11,14 +11,18 @@
 
 import UIKit
 
-class RecommendVM {
+class RecommendVM: BaseViewModel {
     //总分组数据
-    lazy var anchorGroups: [AnchorGroup] = [AnchorGroup]()
+    lazy var cycleModels: [CycleModel] = [CycleModel]()
+    
     private lazy var bigDataGroup: AnchorGroup = AnchorGroup()
     private lazy var prettyGroup: AnchorGroup = AnchorGroup()
+   
 }
 
 extension RecommendVM {
+    
+    // MARK: 请求推荐数据
     func requestData(finishCallback: @escaping () -> ()){
         
         let parameters = ["time": NSDate.getCurrntTime(), "limit": "4", "offset": "0"]
@@ -78,25 +82,7 @@ extension RecommendVM {
         
         //请求第2-12组的游戏数据
         dispatchGroup.enter()
-        NetworkTools.requestData(type: .GET, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) { result in
-            
-            //将result 转成字典类型
-            guard let resultDict = result as? [String : NSObject] else {return}
-            
-            //根据date 该key，获取数组
-            guard let dataArray = resultDict["data"] as? [[String: NSObject]] else {return}
-            
-            //遍历数组，获取字典，并且将字典转为模型对象
-            for dict in dataArray {
-                let group = AnchorGroup(dict: dict)
-                self.anchorGroups.append(group)
-            }
-//            for group in self.anchorGroups{
-//                for anchor in group.anchors{
-//                    print(anchor.nickname)
-//                }
-//                print("__________")
-//            }
+        laodAnchorData(isGroupData: true, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) {
             
             //离开组
             dispatchGroup.leave()
@@ -109,10 +95,27 @@ extension RecommendVM {
             self.anchorGroups.insert(self.bigDataGroup, at: 0)
 
             finishCallback()
-            print("请求到数据 \(self.anchorGroups.count)")
         }
-
-        
-
     }
+    
+    // MARK: 请求无限轮播数据
+    func requestCycleData(finishCallback: @escaping () -> ()){
+        NetworkTools.requestData(type: .GET, URLString: "http:/www.douyutv.com/api/v1/slide/6", parameters: ["version": "2.300"]) { result in
+            //将result 转成字典类型
+            guard let resultDict = result as? [String : NSObject] else {return}
+            
+            //根据date 该key，获取数组
+            guard let dataArray = resultDict["data"] as? [[String: NSObject]] else {return}
+            
+            //遍历数组，字典转为模型对象
+            for dict in dataArray {
+                let anchor = CycleModel(dict: dict)
+                self.cycleModels.append(anchor)
+            }
+            
+            finishCallback()
+        }
+        
+    }
+    
 }
