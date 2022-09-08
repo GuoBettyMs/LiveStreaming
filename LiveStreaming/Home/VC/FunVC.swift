@@ -36,6 +36,9 @@ extension FunVC{
         
         funnyVM.loadFunData {
             self.collectionV.reloadData()
+            
+            //数据请求完成
+            self.loadDataFinished()
         }
         
     }

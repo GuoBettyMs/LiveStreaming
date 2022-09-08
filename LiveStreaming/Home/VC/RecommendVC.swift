@@ -86,6 +86,9 @@ extension RecommendVC{
             groups.append(moreGroup)
             
             self.gameV.groups = groups
+            
+            //数据请求完成
+            self.loadDataFinished()
         }
         
         //请求无限轮播数据

@@ -27,7 +27,7 @@
         <!--首页-->
         <scene sceneID="9uj-X1-ZYd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AO1-YF-PHf" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AO1-YF-PHf" customClass="CustomeNavigationController" customModule="LiveStreaming" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="house" catalog="system" selectedImage="house.fill" id="oCh-RH-ZL1">
                         <color key="badgeColor" systemColor="systemOrangeColor"/>
                     </tabBarItem>

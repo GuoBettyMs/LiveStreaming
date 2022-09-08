@@ -46,6 +46,15 @@
 		CFB0E6E728C0A468007BBA4A /* NSDateEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0E6E628C0A468007BBA4A /* NSDateEx.swift */; };
 		CFB0E6E928C0A732007BBA4A /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0E6E828C0A732007BBA4A /* AnchorGroup.swift */; };
 		CFB0E6EB28C0B18E007BBA4A /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0E6EA28C0B18E007BBA4A /* AnchorModel.swift */; };
+		CFC6619128C8B4F5008D7A52 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC6619028C8B4F5008D7A52 /* BaseVC.swift */; };
+		CFC6619428C8BC67008D7A52 /* RoomShowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC6619328C8BC66008D7A52 /* RoomShowVC.swift */; };
+		CFC6619628C8BCA1008D7A52 /* RoomNormalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC6619528C8BCA1008D7A52 /* RoomNormalVC.swift */; };
+		CFC6619928C8BE5B008D7A52 /* CustomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC6619728C8BE5B008D7A52 /* CustomeNavigationController.swift */; };
+		CFC661A028C8C37A008D7A52 /* animation.png in Resources */ = {isa = PBXBuildFile; fileRef = CFC6619B28C8C379008D7A52 /* animation.png */; };
+		CFC661A128C8C37A008D7A52 /* shouye.png in Resources */ = {isa = PBXBuildFile; fileRef = CFC6619C28C8C379008D7A52 /* shouye.png */; };
+		CFC661A228C8C37A008D7A52 /* shouye1.png in Resources */ = {isa = PBXBuildFile; fileRef = CFC6619D28C8C379008D7A52 /* shouye1.png */; };
+		CFC661A328C8C37A008D7A52 /* shouye2.png in Resources */ = {isa = PBXBuildFile; fileRef = CFC6619E28C8C379008D7A52 /* shouye2.png */; };
+		CFC661A428C8C37A008D7A52 /* shouye3.png in Resources */ = {isa = PBXBuildFile; fileRef = CFC6619F28C8C379008D7A52 /* shouye3.png */; };
 		CFFE049528C1B17300A47C12 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFE049428C1B17300A47C12 /* CollectionBaseCell.swift */; };
 		CFFE049728C1B4E300A47C12 /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFE049628C1B4E300A47C12 /* RecommendCycleView.swift */; };
 		CFFE049928C1B4ED00A47C12 /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFFE049828C1B4ED00A47C12 /* RecommendCycleView.xib */; };
@@ -106,6 +115,15 @@
 		CFB0E6E628C0A468007BBA4A /* NSDateEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDateEx.swift; sourceTree = "<group>"; };
 		CFB0E6E828C0A732007BBA4A /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
 		CFB0E6EA28C0B18E007BBA4A /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		CFC6619028C8B4F5008D7A52 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		CFC6619328C8BC66008D7A52 /* RoomShowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomShowVC.swift; sourceTree = "<group>"; };
+		CFC6619528C8BCA1008D7A52 /* RoomNormalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNormalVC.swift; sourceTree = "<group>"; };
+		CFC6619728C8BE5B008D7A52 /* CustomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeNavigationController.swift; sourceTree = "<group>"; };
+		CFC6619B28C8C379008D7A52 /* animation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animation.png; sourceTree = "<group>"; };
+		CFC6619C28C8C379008D7A52 /* shouye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shouye.png; sourceTree = "<group>"; };
+		CFC6619D28C8C379008D7A52 /* shouye1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shouye1.png; sourceTree = "<group>"; };
+		CFC6619E28C8C379008D7A52 /* shouye2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shouye2.png; sourceTree = "<group>"; };
+		CFC6619F28C8C379008D7A52 /* shouye3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shouye3.png; sourceTree = "<group>"; };
 		CFFE049428C1B17300A47C12 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		CFFE049628C1B4E300A47C12 /* RecommendCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
 		CFFE049828C1B4ED00A47C12 /* RecommendCycleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
@@ -212,6 +230,7 @@
 				CF41B78528AF2C6300F5ED5A /* Live */,
 				CF41B78628AF2C6B00F5ED5A /* Follow */,
 				CF41B78428AF2C5300F5ED5A /* Profile */,
+				CFC6619228C8BC4B008D7A52 /* Room */,
 				CF7B080E28AE46E8000ED72F /* Main */,
 				CF7B07FA28AE46D0000ED72F /* AppDelegate.swift */,
 				CF7B07FC28AE46D0000ED72F /* SceneDelegate.swift */,
@@ -277,6 +296,8 @@
 			children = (
 				CF41B79528AF2FBF00F5ED5A /* MainTabBarC.swift */,
 				CF3EFBEC28C3583600913864 /* BaseAnchorVC.swift */,
+				CFC6619028C8B4F5008D7A52 /* BaseVC.swift */,
+				CFC6619728C8BE5B008D7A52 /* CustomeNavigationController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -345,8 +366,22 @@
 		CF7B081828AE4B61000ED72F /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
+				CFC6619B28C8C379008D7A52 /* animation.png */,
+				CFC6619C28C8C379008D7A52 /* shouye.png */,
+				CFC6619D28C8C379008D7A52 /* shouye1.png */,
+				CFC6619E28C8C379008D7A52 /* shouye2.png */,
+				CFC6619F28C8C379008D7A52 /* shouye3.png */,
 			);
 			path = Screenshots;
+			sourceTree = "<group>";
+		};
+		CFC6619228C8BC4B008D7A52 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				CFC6619328C8BC66008D7A52 /* RoomShowVC.swift */,
+				CFC6619528C8BCA1008D7A52 /* RoomNormalVC.swift */,
+			);
+			path = Room;
 			sourceTree = "<group>";
 		};
 		D85502B39A3B95176EB1A264 /* Frameworks */ = {
@@ -422,17 +457,22 @@
 				CFFE049F28C1E61700A47C12 /* RecommendCycleCell.xib in Resources */,
 				CF38C04628BF5FD500C4656A /* CollectionHeaderView.xib in Resources */,
 				CF41B79428AF2D9E00F5ED5A /* FollowVC.storyboard in Resources */,
+				CFC661A028C8C37A008D7A52 /* animation.png in Resources */,
+				CFC661A128C8C37A008D7A52 /* shouye.png in Resources */,
+				CFC661A428C8C37A008D7A52 /* shouye3.png in Resources */,
 				CF41B79028AF2D1C00F5ED5A /* HomeVC.storyboard in Resources */,
 				CF7B080728AE46D2000ED72F /* LaunchScreen.storyboard in Resources */,
 				CF41B79828AF2FE500F5ED5A /* ProfileVC.storyboard in Resources */,
 				CFFE04A728C1FDCD00A47C12 /* CollectionGameCell.xib in Resources */,
 				CF3EFBF328C3648600913864 /* AmuseMenuView.xib in Resources */,
 				CF7B080428AE46D1000ED72F /* Assets.xcassets in Resources */,
+				CFC661A328C8C37A008D7A52 /* shouye2.png in Resources */,
 				CFFE049928C1B4ED00A47C12 /* RecommendCycleView.xib in Resources */,
 				CFB0E6DD28C04826007BBA4A /* CollectionPrettyCell.xib in Resources */,
 				CF7B080228AE46D0000ED72F /* Main.storyboard in Resources */,
 				CF38C04C28BF639F00C4656A /* CollectionViewCell.xib in Resources */,
 				CFFE04A328C1F6EC00A47C12 /* RecommendGameV.xib in Resources */,
+				CFC661A228C8C37A008D7A52 /* shouye1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +537,7 @@
 				CFB0E6E728C0A468007BBA4A /* NSDateEx.swift in Sources */,
 				CFFE049B28C1DE3500A47C12 /* CycleModel.swift in Sources */,
 				CF1F436728B4CEA100211877 /* PageContentView.swift in Sources */,
+				CFC6619628C8BCA1008D7A52 /* RoomNormalVC.swift in Sources */,
 				CF41B79C28AF3B7E00F5ED5A /* HomeVC.swift in Sources */,
 				CF7B07FD28AE46D0000ED72F /* SceneDelegate.swift in Sources */,
 				CFB0E6E928C0A732007BBA4A /* AnchorGroup.swift in Sources */,
@@ -506,6 +547,7 @@
 				CF3EFBF928C3807C00913864 /* FunVM.swift in Sources */,
 				CFFE049528C1B17300A47C12 /* CollectionBaseCell.swift in Sources */,
 				CF38C04B28BF639F00C4656A /* CollectionViewCell.swift in Sources */,
+				CFC6619128C8B4F5008D7A52 /* BaseVC.swift in Sources */,
 				CFB0E6E328C0A162007BBA4A /* RecommendVM.swift in Sources */,
 				CF38C04528BF5FD500C4656A /* CollectionHeaderView.swift in Sources */,
 				CFFE04A628C1FDCD00A47C12 /* CollectionGameCell.swift in Sources */,
@@ -515,10 +557,12 @@
 				CFFE049D28C1E5EA00A47C12 /* RecommendCycleCell.swift in Sources */,
 				CF3EFBEF28C363C100913864 /* FunVC.swift in Sources */,
 				CFFE049728C1B4E300A47C12 /* RecommendCycleView.swift in Sources */,
+				CFC6619928C8BE5B008D7A52 /* CustomeNavigationController.swift in Sources */,
 				CF1F436528B4B95000211877 /* Common.swift in Sources */,
 				CFB0E6EB28C0B18E007BBA4A /* AnchorModel.swift in Sources */,
 				CF3EFBED28C3583600913864 /* BaseAnchorVC.swift in Sources */,
 				CFFE04A928C20D5A00A47C12 /* GameVC.swift in Sources */,
+				CFC6619428C8BC67008D7A52 /* RoomShowVC.swift in Sources */,
 				CF3EFBE628C34E4500913864 /* AmuseVC.swift in Sources */,
 				CFB0E6DC28C04826007BBA4A /* CollectionPrettyCell.swift in Sources */,
 			);
@@ -668,7 +712,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ABPL22F4U4;
+				DEVELOPMENT_TEAM = U3U6PNS756;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LiveStreaming/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -697,7 +741,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ABPL22F4U4;
+				DEVELOPMENT_TEAM = U3U6PNS756;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LiveStreaming/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

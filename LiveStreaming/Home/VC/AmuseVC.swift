@@ -49,6 +49,9 @@ extension AmuseVC{
             var tempGroups = self.amuseVM.anchorGroups
             tempGroups.remove(at: 0)
             self.menuView.groups = tempGroups
+            
+            //数据请求完成
+            self.loadDataFinished()
         }
     }
 }

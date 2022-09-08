@@ -22,7 +22,7 @@ private let kCommonGameViewH: CGFloat = 90                                      
 private let kGameCellID = "kGameCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
-class GameVC: UIViewController {
+class GameVC: BaseVC {
 
     
     fileprivate lazy var gameVM: GameVM = GameVM()
@@ -73,12 +73,17 @@ class GameVC: UIViewController {
 }
 
 extension GameVC{
-    private func setUI(){
+    override func setUI(){
+        //给父类中内容view的引用进行赋值
+        contentView = collectionView
+
         view.addSubview(collectionView)
         collectionView.addSubview(topHeaderView)
         collectionView.addSubview(gameView)
         //给collectionV 添加内边距
         collectionView.contentInset = UIEdgeInsets(top: kHeaderViewH + kCommonGameViewH, left: 0, bottom: 0, right: 0)
+        
+        super.setUI()
     }
 }
 
@@ -92,6 +97,9 @@ extension GameVC{
             
             //展示常用游戏(10个)
             self.gameView.groups = Array(self.gameVM.games[0..<10])
+            
+            //数据请求完成
+            self.loadDataFinished()
             
         }
     }
