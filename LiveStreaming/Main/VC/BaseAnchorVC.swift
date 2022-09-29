@@ -59,6 +59,7 @@ class BaseAnchorVC: BaseVC {
 extension BaseAnchorVC{
     // MARK: 设置UI界面
     override func setUI(){
+
         //给父类中内容view的引用进行赋值
         contentView = collectionV
         

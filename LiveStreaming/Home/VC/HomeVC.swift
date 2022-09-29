@@ -28,13 +28,13 @@
 import UIKit
 
 
-private let kTitleViewH: CGFloat = 40                   // HomeVC 的标题栏高度
+private let kTitleViewH: CGFloat = 40                   // HomeVC 的标题栏高度40
 
 class HomeVC: UIViewController {
 
     // MARK: PageTitleView 标题栏懒加载属性
     private lazy var pageTitleView: PageTitleView = { [weak self] in
-        let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
+        let titleFrame = CGRect(x: 0, y: UIDevice.xp_navigationFullHeight(), width: kScreenW, height: kTitleViewH)
         let titles = ["推荐", "游戏", "娱乐", "趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
         titleView.pageTitleViewDelegate = self
@@ -43,8 +43,8 @@ class HomeVC: UIViewController {
     
     // MARK: PageContentView 懒加载属性
     private lazy var pageContentView: PageContentView = { [weak self] in
-        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabBarH
-        let contentVFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
+        let contentH = kScreenH - (UIDevice.xp_navigationFullHeight()) - kTitleViewH - kTabBarH
+        let contentVFrame = CGRect(x: 0, y: UIDevice.xp_navigationFullHeight() + kTitleViewH, width: kScreenW, height: contentH)
 
         var childVCs = [UIViewController]()
         childVCs.append(RecommendVC())

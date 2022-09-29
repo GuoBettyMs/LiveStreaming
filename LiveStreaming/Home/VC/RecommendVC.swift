@@ -60,6 +60,7 @@ extension RecommendVC{
         //添加头部内边距 kCycleViewH 是无限轮播界面显示； kGameViewH 是游戏Icon界面显示
         //由于collectionView 底部被遮挡，添加autoresizingMask不起作用，因此添加底部内边距 kNormalItemH
         collectionV.contentInset = UIEdgeInsets(top: kCycleViewH + kGameViewH, left: 0, bottom: kNormalItemH, right: 0)
+
     }
 }
 
