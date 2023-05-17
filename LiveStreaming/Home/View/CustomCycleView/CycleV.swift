@@ -49,8 +49,7 @@ class CycleV: UIView {
         layout.minimumInteritemSpacing = 0 //列间距
         layout.minimumLineSpacing = 0 //行间距
         
-//        collectionV = UICollectionView(frame: .zero, collectionViewLayout: layout)//初始化
-        collectionV = UICollectionView(frame: CGRect(x:0,y:0,width: UIScreen.main.bounds.size.width-100, height: 80), collectionViewLayout: layout)//初始化
+        collectionV = UICollectionView(frame: .zero, collectionViewLayout: layout)//初始化
         collectionV!.translatesAutoresizingMaskIntoConstraints = false
         collectionV!.isPagingEnabled = true //支持手动翻页
         collectionV!.register(CycleVCell.self, forCellWithReuseIdentifier: kCycleCellID)
