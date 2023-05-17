@@ -60,19 +60,23 @@ class CycleV: UIView {
         addSubview(collectionV!)
         addSubview(pageControl)
         
-        collectionV!.snp.makeConstraints { make in
-            make.width.equalToSuperview()
-            make.height.equalToSuperview()
-            make.top.equalToSuperview()
-            make.left.equalToSuperview()
-        }
+        /*
+         pod 'SnapKit', '~> 5.6.0'
+         collectionV!.snp.makeConstraints { make in
+             make.width.equalToSuperview()
+             make.height.equalToSuperview()
+             make.top.equalToSuperview()
+             make.left.equalToSuperview()
+         }
 
-        pageControl.snp.makeConstraints { make in
-            make.width.equalToSuperview()
-            make.height.equalTo(26)
-            make.bottom.equalToSuperview()
-            make.centerX.equalToSuperview()
-        }
+         pageControl.snp.makeConstraints { make in
+             make.width.equalToSuperview()
+             make.height.equalTo(26)
+             make.bottom.equalToSuperview()
+             make.centerX.equalToSuperview()
+         }
+         */
+
         pageControl.tintColor = .systemGray
         pageControl.currentPageIndicatorTintColor = .orange
         pageControl.backgroundColor = UIColor.black.withAlphaComponent(0.5)
@@ -118,7 +122,7 @@ extension CycleV: UICollectionViewDataSource{
             return
         }
         
-        Logger.debug("indexPath.item: \(indexPath) -- \(indexPath.item) -- \(indexPath.item % cycleModels!.count)")
+//        Logger.debug("indexPath.item: \(indexPath) -- \(indexPath.item) -- \(indexPath.item % cycleModels!.count)")
 //        var rootViewController: UINavigationController? = nil
 //        let shoppingwebVC = ShoppingwebVC()
 //        rootViewController = UINavigationController(rootViewController: shoppingwebVC)

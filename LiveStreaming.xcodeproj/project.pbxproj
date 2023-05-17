@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6A40223E28E5BF9C0031A5FB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A40223D28E5BF9C0031A5FB /* Extensions.swift */; };
 		6AACDFD02A14C6D1009B741C /* CycleV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AACDFCF2A14C6D1009B741C /* CycleV.swift */; };
+		6AACDFD22A14CBB0009B741C /* CycleVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AACDFD12A14CBB0009B741C /* CycleVModel.swift */; };
+		6AACDFD42A14CBCB009B741C /* CycleVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AACDFD32A14CBCB009B741C /* CycleVCell.swift */; };
 		9D4730E1E04E6367D4EEEEBF /* Pods_LiveStreaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DF5D883E51805985D1DD9A /* Pods_LiveStreaming.framework */; };
 		CF1F436328B4B7F700211877 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F436228B4B7F700211877 /* PageTitleView.swift */; };
 		CF1F436528B4B95000211877 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F436428B4B95000211877 /* Common.swift */; };
@@ -75,6 +77,8 @@
 		493AAF126A95B9EA925F1A5F /* Pods-LiveStreaming.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStreaming.release.xcconfig"; path = "Target Support Files/Pods-LiveStreaming/Pods-LiveStreaming.release.xcconfig"; sourceTree = "<group>"; };
 		6A40223D28E5BF9C0031A5FB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6AACDFCF2A14C6D1009B741C /* CycleV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleV.swift; sourceTree = "<group>"; };
+		6AACDFD12A14CBB0009B741C /* CycleVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleVModel.swift; sourceTree = "<group>"; };
+		6AACDFD32A14CBCB009B741C /* CycleVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleVCell.swift; sourceTree = "<group>"; };
 		A2DF5D883E51805985D1DD9A /* Pods_LiveStreaming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveStreaming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF1F436228B4B7F700211877 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		CF1F436428B4B95000211877 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				6AACDFCF2A14C6D1009B741C /* CycleV.swift */,
+				6AACDFD12A14CBB0009B741C /* CycleVModel.swift */,
+				6AACDFD32A14CBCB009B741C /* CycleVCell.swift */,
 			);
 			path = CustomCycleView;
 			sourceTree = "<group>";
@@ -536,6 +542,7 @@
 				CF7B07FD28AE46D0000ED72F /* SceneDelegate.swift in Sources */,
 				CFB0E6E928C0A732007BBA4A /* AnchorGroup.swift in Sources */,
 				CF3EFBEB28C3556500913864 /* BaseViewModel.swift in Sources */,
+				6AACDFD42A14CBCB009B741C /* CycleVCell.swift in Sources */,
 				6AACDFD02A14C6D1009B741C /* CycleV.swift in Sources */,
 				CF38C04E28BF7DAB00C4656A /* RecommendVC.swift in Sources */,
 				CF41B79628AF2FBF00F5ED5A /* MainTabBarC.swift in Sources */,
@@ -557,6 +564,7 @@
 				CF1F436528B4B95000211877 /* Common.swift in Sources */,
 				CFB0E6EB28C0B18E007BBA4A /* AnchorModel.swift in Sources */,
 				CF3EFBED28C3583600913864 /* BaseAnchorVC.swift in Sources */,
+				6AACDFD22A14CBB0009B741C /* CycleVModel.swift in Sources */,
 				CFFE04A928C20D5A00A47C12 /* GameVC.swift in Sources */,
 				CFC6619428C8BC67008D7A52 /* RoomShowVC.swift in Sources */,
 				CF3EFBE628C34E4500913864 /* AmuseVC.swift in Sources */,
